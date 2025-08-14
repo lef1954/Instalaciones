@@ -1,0 +1,63 @@
+name: Instalacion Nueva
+description: Crear un issue relacionado a la revisión de factibilidad técnica
+title: "DOMICILIO / APELLIDO y NOMBRE"
+labels: ["Factibilidad tecnica"]
+assignees: [lef1954]
+body:
+  - type: dropdown
+    id: Segment
+    attributes:
+      label: "Localidad:"
+      description: "¿Cuál es la localidad?"
+      options:
+        - Viedma
+        - Carmen de Patagones
+        - Ts As
+        - Coronel Suarez
+        - Perez
+        - Zavalla 
+        - Torquins
+        - Laprida
+        - La Madrid
+        - Carhue
+    validations:
+      required: true
+
+  - type: input
+    id: IssueDescription
+    attributes:
+      label: "Domicilio titular:"
+      placeholder: "Ej: Calle 123, Barrio"
+    validations:
+      required: true
+
+  - type: input
+    id: IssueWhatsApp 
+    attributes:
+      label: "WhatsApp titular:"
+      placeholder: "+54XXXXXXXXXX"
+    validations:
+      required: true
+
+  - type: input
+    id: IssueCoordenadas
+    attributes:
+      label: "Coordenadas:"
+      placeholder: "-38.365909, -60.271642"
+    validations:
+      required: true
+
+  - type: textarea
+    id: FOTO
+    attributes:
+      label: "Foto Google"
+      description: "Adjuntar imagen o link donde se muestre la geolocalización del cliente y las CDs más cercanas."
+    validations:
+      required: true    
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        🚨 **Este Issue notifica a:**  
+        @rgaston2868
